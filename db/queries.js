@@ -1,28 +1,9 @@
 
-onst inquirer = require('inquirer');
-const { viewAllDepartments } = require('./db/queries');
+const pool = require('./connection');
 
-const mainMenu = async () => {
-    const { choice } = await inquirer.prompt([
-        {
-            type: 'list',
-            name: 'choice',
-            message: 'What would you like to do?',
-            choices: [
-                'View all departments',
-                'Exit'
-            ],
-        },
-    ]);
-
-    if (choice === 'View all departments') {
-        const departments = await viewAllDepartments();
-        console.table(departments);
-    }
-
-    if (choice === 'Exit') process.exit();
+const viewAllDepartments = async () => {
+    const result = await pool.query('SELECT * FROM department');
+    return result.rows;
 };
 
-mainMenu();
-= { viewAllDepartments };
-
+module.exports = { viewAllDepartments };
