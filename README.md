@@ -15,6 +15,9 @@ This Employee Tracker is a command-line application that helps business owners o
 
 - **What did you learn?**  
   How to integrate Node.js with PostgreSQL using the `pg` library, design relational schema for business data, handle asynchronous queries with async/await, and build a clean command-line user interface with Inquirer.
+  
+  - **Demo Video**
+  https://drive.google.com/file/d/1P4hZ8syHUve8bjiaMFZSVcHmn9XB2Oy4/view
 
 ## Table of Contents (Optional)
 
@@ -25,3 +28,4 @@ This Employee Tracker is a command-line application that helps business owners o
 - [Credits](#credits)
 - [License](#license)
 - [Future Enhancements](#future-enhancements)
+
