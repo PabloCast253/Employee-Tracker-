@@ -1,11 +1,12 @@
+// db/connection.js
 const { Pool } = require('pg');
 
 const pool = new Pool({
-    user: 'your_user',
-    host: 'localhost',
-    database: 'employee_db',
-    password: 'your_password',
-    port: 5432,
+  user: 'postgres',          // <-- Your actual username
+  host: 'localhost',
+  database: 'employee_db',   // <-- Your actual database name
+  password: 'Lovetv253', // <-- Your actual password
+  port: 5432,
 });
 
 module.exports = pool;
