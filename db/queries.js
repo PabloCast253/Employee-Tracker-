@@ -1,3 +1,4 @@
+
 onst inquirer = require('inquirer');
 const { viewAllDepartments } = require('./db/queries');
 
@@ -23,3 +24,5 @@ const mainMenu = async () => {
 };
 
 mainMenu();
+= { viewAllDepartments };
+
